@@ -114,6 +114,14 @@ img {
   font-weight: 700;
 }
 
+/* A partir de 768 px se verá de forma horizontal */
+@media (min-width: 768px) {
+  .navegacion {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
 .navegacion__enlace {
   display: block; /* Cambia los enlaces a uno abajo del otro */
   text-align: center;
@@ -121,9 +129,11 @@ img {
   color: var(--blanco);
 }
 
+/* Contenido Principal */
 @media (min-width: 768px) {
-  .navegacion {
-    display: flex;
-    gap: 2rem;
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
   }
 }
